@@ -63,15 +63,15 @@ The coalesced transpose achieved approximately **1.93× average speedup** over t
 
 ### 1. Matrix Transpose Comparison
 
-![Transpose Comparison](graphs/transpose_comparison.png)
+![Transpose Comparison](results/transpose_comparison.png)
 
 ### 2. Naive Matrix Multiplication
 
-![Matrix Multiplication Performance](graphs/matmul_performance.png)
+![Matrix Multiplication Performance](results/matmul_performance.png)
 
 ### 3. Average Transpose Execution Time
 
-![Average Transpose Comparison](graphs/average_transpose_comparison.png)
+![Average Transpose Comparison](results/average_transpose_comparison.png)
 
 ## Screenshots
 
@@ -85,7 +85,7 @@ Experiment6_CUDA/
 ├── exp6
 ├── plot_results.py
 ├── README.md
-├── graphs/
+├── results/
 │   ├── transpose_comparison.png
 │   ├── matmul_performance.png
 │   └── average_transpose_comparison.png

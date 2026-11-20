@@ -20,7 +20,7 @@ plt.title("CUDA Matrix Transpose Comparison")
 plt.legend()
 plt.grid(axis="y", alpha=0.3)
 plt.tight_layout()
-plt.savefig("transpose_comparison.png", dpi=300)
+plt.savefig("results/transpose_comparison.png", dpi=300)
 plt.close()
 
 # Graph 2: Matrix multiplication
@@ -30,7 +30,7 @@ plt.ylabel("Execution Time (ms)")
 plt.title("CUDA Naive Matrix Multiplication")
 plt.grid(axis="y", alpha=0.3)
 plt.tight_layout()
-plt.savefig("matmul_performance.png", dpi=300)
+plt.savefig("results/matmul_performance.png", dpi=300)
 plt.close()
 
 # Graph 3: Average transpose comparison
@@ -47,7 +47,7 @@ for bar, value in zip(bars, averages):
              f"{value:.3f} ms", ha="center", va="bottom")
 
 plt.tight_layout()
-plt.savefig("average_transpose_comparison.png", dpi=300)
+plt.savefig("results/average_transpose_comparison.png", dpi=300)
 plt.close()
 
 print("SUCCESS: All 3 graphs created!")
