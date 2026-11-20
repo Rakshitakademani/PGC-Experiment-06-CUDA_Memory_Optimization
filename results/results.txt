@@ -1,0 +1,14 @@
+GPU: NVIDIA RTX 4500 Ada Generation (compute capability 8.9)
+
+=== PART A: Matrix transpose (N = 4096) ===
+Uncoalesced :    0.715 ms |   187.7 GB/s | PASS
+Coalesced   :    0.370 ms |   362.4 GB/s | PASS
+Speedup (uncoalesced / coalesced) = 1.93x
+
+=== PART B: Naive matrix multiplication (N = 1024) ===
+Naive matmul:    0.902 ms |  2382.1 GFLOPS | PASS
+
+=== SUMMARY ===
+Transpose uncoalesced : 0.715 ms
+Transpose coalesced   : 0.370 ms
+Naive matmul           : 0.902 ms
